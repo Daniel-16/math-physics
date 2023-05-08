@@ -1,3 +1,5 @@
+import math
+
 class Math:
     def exponential(self, number, exponent):
         self.exponential = number ^ exponent
