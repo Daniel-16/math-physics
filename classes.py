@@ -1,8 +1,10 @@
 class Math:
     def exponential(self, number, exponent):
-        pass
+        self.exponential = number ^ exponent
+        return self.exponential
     def squareRoot(self, number):
-        pass
+        self.squareRoot = math.sqrt(number)
+        return self.squareRoot
     def modulus(self, num1, num2):
         pass
     def twoDimVector(self, num1, num2):
@@ -15,8 +17,10 @@ class Physics:
     def energy(self, mass):
         pass
     def workDone(self, force, distance):
-        pass
+        self.workDone = force * distance
+        return self.workDone
     def power(self, current, volt):
         pass
     def force(self, mass, acceleration):
         pass
+
