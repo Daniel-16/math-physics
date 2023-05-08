@@ -20,12 +20,12 @@ class Math:
          return magnitude
 class Physics:
     def velocity(self, distance, time):
-        vel = int(dist) / int(time)
-        return vel
+        self.velocity = int(distance) / int(time)
+        return self.velocity
     def energy(self, mass):
         speedOfLight = 3.0 * 10**8
-        energy = int(mass) * speedOfLight
-        return energy
+        self.energy = int(mass) * speedOfLight
+        return self.energy
     def workDone(self, force, distance):
         self.workDone = force * distance
         return self.workDone
@@ -33,7 +33,8 @@ class Physics:
         self.power = current * volt
         return self.power
     def force(self, mass, acceleration):
-        pass
+        self.force = mass * acceleration
+        return self.force
 
 maths = Math()
 phy = Physics()
@@ -67,21 +68,21 @@ elif choice.lower() == 'physics':
     if func.lower().replace(" ","") == "velocity":
         distance = int(input("distance: "))
         time  = int(input("time: "))
-        print(phy.velocity(distance,time))
+        print(phy.velocity(distance, time))
     elif func.lower().replace(" ","") == "energy":
         mass = int(input("Mass: "))
         print(phy.energy(mass))
     elif func.lower().replace(" ","") == "workdone":
         force = int(input("Force: "))
-        dist = int(input("Distance: "))
-        print(phy.workDone(force,distance))
+        distance = int(input("Distance: "))
+        print(phy.workDone(force, distance))
     elif func.lower().replace(" ","") == "power":
        current =  int(input("Current: "))
        volt = int(input("Voltage: "))
-       print(phy.power(current,volt))
+       print(f'Power is {phy.power(current, volt)}')
     elif func.lower().replace(" ","") == "force":
        mass =  int(input("Mass: "))
        acc = int(input("Acceleration: "))
-       print(phy.force(mass,acc))
+       print(f'Force is {phy.force(mass, acc)}')
 
 
