@@ -3,8 +3,8 @@ choice = input("Please Choose Class \n Math \n Physics \n")
 
 
 class Math:
-    def exponential(self, number, exponent):
-        self.exponential = number**exponent
+    def exponential(self, exponent, power):
+        self.exponential = exponent ** power
         return self.exponential
     def squareRoot(self, number):
         self.squareRoot = math.sqrt(number)
@@ -45,7 +45,7 @@ if choice.lower() == "math" or choice.lower() == "m":
     if func.lower().replace(" ","") == "exponential":
         exponent = int(input("Base number: "))
         power  = int(input("Power: "))
-        print(maths.exponential())
+        print(maths.exponential(exponent, power))
     elif func.lower().replace(" ","") == "squareroot":
         number = int(input("Number to square: "))
         print(maths.squareRoot(number))
