@@ -52,16 +52,16 @@ if choice.lower() == "math" or choice.lower() == "m":
     elif func.lower().replace(" ","") == "modulus":
         num1 = int(input("First Number: "))
         num2 = int(input("Second Number: "))
-        print(maths.modulus(num1,num2))
+        print(maths.modulus(num1, num2))
     elif func.lower().replace(" ","") == "twodimensionalvector":
        num1 =  int(input("First vector : "))
        num2 = int(input("Second Vector: "))
-       print(maths.twoDimVector(num1,num2))
+       print(maths.twoDimVector(num1, num2))
     elif func.lower().replace(" ","") == "threedimensionalvector":
        num1 =  int(input("First vector : "))
        num2 = int(input("Second Vector: "))
        num3 = int(input("Third Vector: "))
-       print(maths.threeDimVector(num1,num2,num3))
+       print(maths.threeDimVector(num1, num2, num3))
     
 elif choice.lower() == 'physics' or choice.lower() == "p":
     func = input("Choose  Function \n Velocity \n Energy \n Workdone \n Power \n Force ")
