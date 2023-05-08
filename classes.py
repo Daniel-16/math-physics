@@ -17,6 +17,12 @@ class Physics:
     def workDone(self, force, distance):
         pass
     def power(self, current, volt):
-        pass
+        self.power = current * volt
+        return self.power
     def force(self, mass, acceleration):
         pass
+
+physicsOperation = Physics()
+current = int(input("Enter the Current in Ampere I "))
+volt = int(input("Enter the amount of Voltage V "))
+print(f'The Power of the value entered is {physicsOperation.power(current, volt)}')
