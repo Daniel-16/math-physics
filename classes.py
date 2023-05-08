@@ -68,21 +68,21 @@ elif choice.lower() == 'physics':
     if func.lower().replace(" ","") == "velocity":
         distance = int(input("distance: "))
         time  = int(input("time: "))
-        print(phy.velocity(distance, time))
+        print(f'Velocity is {phy.velocity(distance, time)} m/s')
     elif func.lower().replace(" ","") == "energy":
         mass = int(input("Mass: "))
-        print(phy.energy(mass))
+        print(f'Energy is {phy.energy(mass)} joules')
     elif func.lower().replace(" ","") == "workdone":
         force = int(input("Force: "))
         distance = int(input("Distance: "))
-        print(phy.workDone(force, distance))
+        print(f'Workdone is {phy.workDone(force, distance)} joules')
     elif func.lower().replace(" ","") == "power":
        current =  int(input("Current: "))
        volt = int(input("Voltage: "))
-       print(f'Power is {phy.power(current, volt)}')
+       print(f'Power is {phy.power(current, volt)} watts')
     elif func.lower().replace(" ","") == "force":
        mass =  int(input("Mass: "))
        acc = int(input("Acceleration: "))
-       print(f'Force is {phy.force(mass, acc)}')
+       print(f'Force is {phy.force(mass, acc)} newton')
 
 
