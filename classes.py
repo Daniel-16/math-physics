@@ -40,7 +40,7 @@ maths = Math()
 phy = Physics()
 
 
-if choice.lower() == "math":
+if choice.lower() == "math" or choice.lower() == "m":
     func = input("Choose Function \n Exponenetial \n SquareRoot \n Modulus \n Two Dimensional Vector \n ")
     if func.lower().replace(" ","") == "exponential":
         exponent = int(input("Base number: "))
@@ -63,7 +63,7 @@ if choice.lower() == "math":
        num3 = int(input("Third Vector: "))
        print(maths.threeDimVector(num1,num2,num3))
     
-elif choice.lower() == 'physics':
+elif choice.lower() == 'physics' or choice.lower() == "p":
     func = input("Choose  Function \n Velocity \n Energy \n Workdone \n Power \n Force ")
     if func.lower().replace(" ","") == "velocity":
         distance = int(input("distance: "))
