@@ -4,7 +4,7 @@ choice = input("Please Choose Class \n Math \n Physics \n")
 
 class Math:
     def exponential(self, number, exponent):
-        self.exponential = number ^ exponent
+        self.exponential = number**exponent
         return self.exponential
     def squareRoot(self, number):
         self.squareRoot = math.sqrt(number)
@@ -16,10 +16,12 @@ class Math:
         magnitude = math.sqrt(num1**2 + num2**2)        
         return magnitude
     def threeDimVectors(self, num1, num2, num3):
-        pass
+         magnitude = math.sqrt(num1**2 + num2**2 + num3**2)        
+         return magnitude
 class Physics:
     def velocity(self, distance, time):
-        pass
+        vel = int(dist) / int(time)
+        return vel
     def energy(self, mass):
         speedOfLight = 3.0 * 10**8
         energy = int(mass) * speedOfLight
