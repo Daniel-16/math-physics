@@ -80,7 +80,7 @@ elif choice.lower() == 'physics' or choice.lower() == "p":
        current =  int(input("Current: "))
        volt = int(input("Voltage: "))
        print(f'Power is {phy.power(current, volt)} watts')
-    elif func.lower().replace(" ","") == "force":
+    elif func.lower().replace(" ","") == "force" or func.lower().replace(" ", "") == "f":
        mass =  int(input("Mass: "))
        acc = int(input("Acceleration: "))
        print(f'Force is {phy.force(mass, acc)} newton')
