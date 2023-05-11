@@ -65,18 +65,18 @@ if choice.lower() == "math" or choice.lower() == "m":
     
 elif choice.lower() == 'physics' or choice.lower() == "p":
     func = input("Choose  Function \n Velocity \n Energy \n Workdone \n Power \n Force ")
-    if func.lower().replace(" ","") == "velocity":
+    if func.lower().replace(" ","") == "velocity" or func.lower().replace(" ", "") == "v":
         distance = int(input("distance: "))
         time  = int(input("time: "))
         print(f'Velocity is {phy.velocity(distance, time)} m/s')
-    elif func.lower().replace(" ","") == "energy":
+    elif func.lower().replace(" ","") == "energy" or func.lower().replace(" ", "") == "e":
         mass = int(input("Mass: "))
         print(f'Energy is {phy.energy(mass)} joules')
-    elif func.lower().replace(" ","") == "workdone":
+    elif func.lower().replace(" ","") == "workdone" or func.lower().replace(" ", "") == "w":
         force = int(input("Force: "))
         distance = int(input("Distance: "))
         print(f'Workdone is {phy.workDone(force, distance)} joules')
-    elif func.lower().replace(" ","") == "power":
+    elif func.lower().replace(" ","") == "power" or func.lower().replace(" ", "") == "p":
        current =  int(input("Current: "))
        volt = int(input("Voltage: "))
        print(f'Power is {phy.power(current, volt)} watts')
