@@ -23,7 +23,7 @@ class Physics:
         self.velocity = int(distance) / int(time)
         return self.velocity
     def energy(self, mass):
-        speedOfLight = 3.0 * 10**8
+        speedOfLight = 3.0 * 10 ** 8
         self.energy = int(mass) * speedOfLight
         return self.energy
     def workDone(self, force, distance):
@@ -41,27 +41,27 @@ phy = Physics()
 
 
 if choice.lower() == "math" or choice.lower() == "m":
-    func = input("Choose Function \n Exponenetial \n SquareRoot \n Modulus \n Two Dimensional Vector \n ")
-    if func.lower().replace(" ","") == "exponential":
+    func = input("Choose Function \n Exponenetial \n SquareRoot \n Modulus \n Two Dimensional Vector \n Three Dimensional Vector \n")
+    if func.lower().replace(" ","") == "exponential" or func.lower().replace(" ", "") == "e":
         exponent = int(input("Base number: "))
         power  = int(input("Power: "))
         print(maths.exponential(exponent, power))
-    elif func.lower().replace(" ","") == "squareroot":
+    elif func.lower().replace(" ","") == "squareroot" or func.lower().replace(" ", "") == "s":
         number = int(input("Number to square: "))
         print(maths.squareRoot(number))
-    elif func.lower().replace(" ","") == "modulus":
+    elif func.lower().replace(" ","") == "modulus" or func.lower().replace(" ", "") == "m":
         num1 = int(input("First Number: "))
         num2 = int(input("Second Number: "))
         print(maths.modulus(num1, num2))
-    elif func.lower().replace(" ","") == "twodimensionalvector":
+    elif func.lower().replace(" ","") == "twodimensionalvector" or func.lower().replace(" ", "") == "2d":
        num1 =  int(input("First vector : "))
        num2 = int(input("Second Vector: "))
        print(maths.twoDimVector(num1, num2))
-    elif func.lower().replace(" ","") == "threedimensionalvector":
+    elif func.lower().replace(" ","") == "threedimensionalvector" or func.lower().replace(" ", "") == "3d":
        num1 =  int(input("First vector : "))
        num2 = int(input("Second Vector: "))
        num3 = int(input("Third Vector: "))
-       print(maths.threeDimVector(num1, num2, num3))
+       print(maths.threeDimVectors(num1, num2, num3))
     
 elif choice.lower() == 'physics' or choice.lower() == "p":
     func = input("Choose  Function \n Velocity \n Energy \n Workdone \n Power \n Force ")
